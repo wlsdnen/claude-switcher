@@ -2,14 +2,18 @@
 
 Switch between Claude Code **login mode** (subscription) and **API key mode** easily.
 
-## The Problem
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)](#-platform-support)
+[![Node](https://img.shields.io/badge/Node-%3E%3D18.0.0-brightgreen.svg)](#-requirements)
+
+## ❓ The Problem
 
 Claude Code prioritizes `ANTHROPIC_API_KEY` over your subscription login. This means:
 - If you have an API key set, Claude **always** uses it (and charges your API account)
 - To use your Pro/Max subscription, you must manually unset the environment variable
 - Switching between modes is tedious
 
-## The Solution
+## ✨ The Solution
 
 `claude-switcher` (or `cs`) lets you choose which mode to use when launching Claude:
 
@@ -19,7 +23,15 @@ cs api      # Use API key
 cs status   # Check current configuration
 ```
 
-## Installation
+## ✨ Features
+
+- **🎯 Zero configuration needed** – Works out of the box with existing Claude Code installations
+- **⚡ Instant mode switching** – Seamlessly toggle between subscription and API key modes
+- **🔐 Secure credential management** – No passwords stored, uses system keychain
+- **📝 Clear status information** – Always know which mode you're running in
+- **🔄 Seamless Claude integration** – All Claude flags and arguments supported
+
+## 📦 Installation
 
 Install directly from GitHub:
 
@@ -41,7 +53,7 @@ To update to the latest version:
 npm install -g github:wlsdnen/claude-switcher
 ```
 
-## Usage
+## 🚀 Usage
 
 ### Login Mode (Subscription)
 
@@ -108,7 +120,7 @@ cs login --continue
 cs api --model opus
 ```
 
-## How It Works
+## 🔧 How It Works
 
 ```
 ┌─────────────┐     ┌──────────────────────┐     ┌─────────────┐
@@ -122,7 +134,7 @@ cs api --model opus
 └─────────────┘     └──────────────────────┘     └─────────────┘
 ```
 
-## Setting Up Your API Key
+## ⚙️ Setting Up Your API Key
 
 If you want to use API mode, set your API key:
 
@@ -137,18 +149,18 @@ source ~/.zshrc
 
 Get your API key at: https://console.anthropic.com/
 
-## Requirements
+## 📋 Requirements
 
 - Node.js 18 or later
 - Claude Code CLI installed (`npm install -g @anthropic-ai/claude-code`)
 
-## Platform Support
+## 🌍 Platform Support
 
 - macOS
 - Linux
 - Windows
 
-## Troubleshooting
+## 🔍 Troubleshooting
 
 ### Claude CLI not found
 
@@ -171,6 +183,6 @@ This shouldn't happen, but if it does:
 1. Run `cs status` to verify the setup
 2. Try running Claude directly without the key: `unset ANTHROPIC_API_KEY && claude`
 
-## License
+## 📄 License
 
 MIT
