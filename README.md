@@ -23,7 +23,7 @@ cs api      # Use API key
 cs status   # Check current configuration
 ```
 
-## ✨ Features
+## 🎁 Features
 
 - **🎯 Zero configuration needed** – Works out of the box with existing Claude Code installations
 - **⚡ Instant mode switching** – Seamlessly toggle between subscription and API key modes
@@ -183,6 +183,16 @@ This shouldn't happen, but if it does:
 1. Run `cs status` to verify the setup
 2. Try running Claude directly without the key: `unset ANTHROPIC_API_KEY && claude`
 
+## 🤝 Contributing
+
+Issues and pull requests are welcome! Feel free to check [issues page](https://github.com/wlsdnen/claude-switcher/issues) if you want to contribute.
+
+Found a bug? Have a feature request? Please [open an issue](https://github.com/wlsdnen/claude-switcher/issues/new).
+
 ## 📄 License
 
 MIT
+
+---
+
+**Version:** 1.0.0 | **Status:** Production Ready | **Last Updated:** 2026-02-06

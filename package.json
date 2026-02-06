@@ -19,7 +19,7 @@
     "api-key",
     "switcher"
   ],
-  "author": "",
+  "author": "Jinwoo Cho",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",
