@@ -21,8 +21,24 @@ cs status   # Check current configuration
 
 ## Installation
 
+Install directly from GitHub:
+
 ```bash
-npm install -g claude-switcher
+npm install -g github:wlsdnen/claude-switcher
+```
+
+Or using a specific version/tag:
+
+```bash
+npm install -g github:wlsdnen/claude-switcher#v1.0.0
+```
+
+### Updating
+
+To update to the latest version:
+
+```bash
+npm install -g github:wlsdnen/claude-switcher
 ```
 
 ## Usage
