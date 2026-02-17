@@ -16,20 +16,26 @@ export function run() {
   program
     .command('login')
     .description('Run Claude in login mode (subscription-based, ignores API key)')
+    .option('-y, --yolo', 'Run with --dangerously-skip-permissions')
     .allowUnknownOption(true)
     .allowExcessArguments(true)
     .action((options, command) => {
-      const args = command.args;
+      const args = options.yolo
+        ? ['--dangerously-skip-permissions', ...command.args]
+        : command.args;
       loginCommand(args);
     });
 
   program
     .command('api')
     .description('Run Claude in API key mode (uses ANTHROPIC_API_KEY)')
+    .option('-y, --yolo', 'Run with --dangerously-skip-permissions')
     .allowUnknownOption(true)
     .allowExcessArguments(true)
     .action((options, command) => {
-      const args = command.args;
+      const args = options.yolo
+        ? ['--dangerously-skip-permissions', ...command.args]
+        : command.args;
       apiCommand(args);
     });
 
